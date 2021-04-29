@@ -1,0 +1,28 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: autocannon
+    versions:
+    - 7.0.3
+    - 7.0.4
+    - 7.0.5
+    - 7.1.0
+  - dependency-name: eslint
+    versions:
+    - 7.20.0
+    - 7.21.0
+    - 7.22.0
+    - 7.23.0
+    - 7.24.0
+    - 7.6.0
+  - dependency-name: helmet
+    versions:
+    - 4.4.1
+  - dependency-name: yup
+    versions:
+    - 0.32.8
